@@ -115,6 +115,11 @@ body {
  border: 2px solid var(--color-light-gray)
 }
 
+.form__input:focus {
+ outline: none;
+ border-color: var(--color-cta);
+}
+
 .form__input::placeholder {
  color: var(--color-light-gray);
 }
@@ -170,4 +175,104 @@ body {
 
 .thank-you {
  display: none;
+ margin-top: 5rem;
+ margin-bottom: 15rem;
+ text-align: center;
+}
+
+.thank-you__icon {
+ margin-bottom: 4rem;
+}
+
+.thank-you__title {
+ text-transform: uppercase;
+ font-size: 3.5rem;
+ margin-bottom: 2rem;
+ letter-spacing: 1px;
+}
+
+.thank-you__text {
+ margin-bottom: 4rem;
+ color: var(--color-dark-gray);
+}
+
+@media(min-width: 1200px){
+
+ body {
+  background-size: 35% 100%;
+ }
+ 
+ .container {
+  max-width: 90rem;
+  display: flex;
+  gap: 20%;
+ }
+
+ .cards {
+  width: 40%;
+ }
+
+ .main {
+  width: 40%;
+ }
+ 
+ .card {
+  max-width: 100%;
+ }
+ 
+ .card--front {
+  color: #fff;
+  transform: translate(0, 4rem);
+ }
+ 
+ .card--back {
+   transform: translate(10rem, 10rem);
+ }
+ 
+ .card__circles {
+  margin-bottom: 6rem;
+ }
+ 
+ .card__number {
+  letter-spacing: 6px;
+ }
+ 
+ .card__cvc {
+  margin-top: 8.8rem;
+ }
+
+ .btn:hover,
+ .btn:active {
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, .1);
+  opacity: .9;
+ }
+
+ .active .form {
+  display: none;
+ }
+ 
+ .thank-you {
+  display: none
+ }
+
+ .active .thank-you {
+  display: block;
+ }
+ 
+ .thank-you__icon {
+  margin-bottom: 4rem;
+ }
+ 
+ .thank-you__title {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+ }
+ 
+ .thank-you__text {
+  margin-bottom: 4rem;
+  color: var(--color-dark-gray);
+ }
+ 
 }
