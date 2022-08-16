@@ -79,7 +79,6 @@ form.addEventListener('submit', e => {
  } 
 })
 
-
 function errorsAvailable(){
  inputs.forEach(input => {
   if(!details[input.name].trim()){
@@ -88,19 +87,6 @@ function errorsAvailable(){
    error = false
   }
  })
-}
-
-
-function validateCardNumber(element, input){
- 
-}
-
-function validateCvc(input){
-
-}
-
-function validateDate(input){
-
 }
 
 function findErrorElement(element, name){
